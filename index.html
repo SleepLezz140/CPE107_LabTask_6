@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <link href="/CPE107L/Lab Tasks/Lab Task 6/LT6.css" rel="stylesheet"> 
+    <title>Lab Task 6</title>   
+</head>
+<body>
+  <div class="container-form">
+    <form name="SignUp"  style="border:2px solid rgb(192, 176, 176)"  onsubmit="return validate()">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <hr>
+  
+        <input type="text" name="input" id="Name" placeholder="First Name">
+        <div id="name-error" class="val-error"></div>
+    
+        <input type="text" name="input" id="MI" placeholder="Middle Initial">
+        <div id="initial-error" class="val-error"></div>
+    
+        <input type="text" name="input" id="LastName" placeholder="Last Name">
+        <div id="LastName-error" class="val-error"></div>
+
+        <input type="text" name="input"  id="Email" placeholder="Email Address">
+        <div id="Email-error" class="val-error"></div>
+        <div id="invalid-email" class="val-error"></div>
+  
+        <div class="clearfix">
+          <button type="submit" id="signupbtn">Submit</button><br><br>
+          <button type="reset" id="resetbtn">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+    <script src="LT6.js"></script>
+</body>
+</html>
